@@ -7969,7 +7969,7 @@ entries:
     sources:
     - ghcr.io/kubewarden/policies/priority-class-policy:v1.0.0
     urls:
-    - https://github.com/kravciak/policy-catalog/releases/download/priority-class-policy-1.0.0/priority-class-policy-1.0.0.tgz
+    - https://github.com/kubewarden/policy-catalog/releases/download/priority-class-policy-1.0.0/priority-class-policy-1.0.0.tgz
     version: 1.0.0
   psa-label-enforcer:
   - annotations:
