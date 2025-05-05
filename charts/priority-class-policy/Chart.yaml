@@ -6,7 +6,7 @@ annotations:
   kubewarden/displayName: Priority class policy
   kubewarden/mutation: "false"
   kubewarden/registry: ghcr.io
-  kubewarden/repository: kubewarden/policies/priority-class-policy
+  kubewarden/repository: kravciak/policies/priority-class-policy
   kubewarden/resources: Pod, Replicationcontroller, Deployments, Replicaset, Statefulset,
     Daemonset, Job, Cronjob
   kubewarden/rules: |
