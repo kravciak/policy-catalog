@@ -1,13 +1,14 @@
 annotations:
-  artifacthub.io/repository: environment-variable-policy
+  artifacthub.io/repository: priority-class-policy
   catalog.cattle.io/hidden: "true"
   catalog.cattle.io/type: kubewarden-policy
   catalog.cattle.io/ui-component: kubewarden
-  kubewarden/displayName: Environment Variable Policy
+  kubewarden/displayName: Priority class policy
   kubewarden/mutation: "false"
   kubewarden/registry: ghcr.io
-  kubewarden/repository: kubewarden/policies/environment-variable-policy
-  kubewarden/resources: Deployment,Replicaset,Statefulset,Daemonset,Replicationcontroller,Job,Cronjob,Pod
+  kubewarden/repository: kubewarden/policies/priority-class-policy
+  kubewarden/resources: Pod, Replicationcontroller, Deployments, Replicaset, Statefulset,
+    Daemonset, Job, Cronjob
   kubewarden/rules: |
     - apiGroups:
       - ''
@@ -17,6 +18,7 @@ annotations:
       - pods
       operations:
       - CREATE
+      - UPDATE
     - apiGroups:
       - ''
       apiVersions:
@@ -50,20 +52,12 @@ annotations:
       - UPDATE
   kubewarden/tag: v1.0.0
 appVersion: 1.0.0
-description: A Kubewarden Policy that controls the usage of environment variables
-home: https://github.com/kubewarden/environment-variable-policy
+description: Validates Pod's priority class
+home: https://github.com/kubewarden/priority-class-policy
 keywords:
-- deployment
-- replicaset
-- statefulset
-- daemonset
-- replicationcontroller
-- job
-- cronjob
 - pod
-- container
-- environment-variables
-name: environment-variable-policy
+- priority-class
+name: priority-class-policy
 sources:
-- ghcr.io/kubewarden/policies/environment-variable-policy:v1.0.0
+- ghcr.io/kubewarden/policies/priority-class-policy:v1.0.0
 version: 1.0.0
