@@ -9,7 +9,7 @@ entries:
       kubewarden/displayName: Affinity Node Selector
       kubewarden/mutation: "false"
       kubewarden/registry: ghcr.io
-      kubewarden/repository: kubewarden/policies/affinity-node-selector
+      kubewarden/repository: kravciak/policies/affinity-node-selector
       kubewarden/resources: CronJob, DaemonSet, Deployment, Job, Pod, StatefulSet
       kubewarden/rules: |
         - apiGroups:
