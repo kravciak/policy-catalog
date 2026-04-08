@@ -1,5 +1,5 @@
 annotations:
-  artifacthub.io/repository: cel-policy
+  artifacthub.io/repository: kubewarden-policy-library
   catalog.cattle.io/hidden: "true"
   catalog.cattle.io/type: kubewarden-policy
   catalog.cattle.io/ui-component: kubewarden
@@ -22,10 +22,10 @@ annotations:
       - CREATE
       - UPDATE
       - DELETE
-  kubewarden/tag: v1.3.3
-appVersion: 1.3.3
+  kubewarden/tag: v1.6.0
+appVersion: 1.6.0
 description: A policy that evaluates CEL expressions
-home: https://github.com/kubewarden/cel-policy
+home: https://github.com/kubewarden/policies
 keywords:
 - compliance
 - CEL
@@ -33,5 +33,5 @@ keywords:
 - Common Expression Language
 name: cel-policy
 sources:
-- ghcr.io/kubewarden/policies/cel-policy:v1.3.3
-version: 1.3.3
+- ghcr.io/kubewarden/policies/cel-policy:v1.6.0
+version: 1.6.0

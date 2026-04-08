@@ -1,10 +1,10 @@
 annotations:
-  artifacthub.io/repository: priority-class-policy
+  artifacthub.io/repository: kubewarden-policy-library
   catalog.cattle.io/hidden: "true"
   catalog.cattle.io/type: kubewarden-policy
   catalog.cattle.io/ui-component: kubewarden
   kubewarden/displayName: Priority class policy
-  kubewarden/mutation: "false"
+  kubewarden/mutation: "true"
   kubewarden/registry: ghcr.io
   kubewarden/repository: kubewarden/policies/priority-class-policy
   kubewarden/resources: Pod, Replicationcontroller, Deployments, Replicaset, Statefulset,
@@ -50,14 +50,14 @@ annotations:
       operations:
       - CREATE
       - UPDATE
-  kubewarden/tag: v1.0.3
-appVersion: 1.0.3
+  kubewarden/tag: v1.1.5
+appVersion: 1.1.5
 description: Validates Pod's priority class
-home: https://github.com/kubewarden/priority-class-policy
+home: https://github.com/kubewarden/policies
 keywords:
 - pod
 - priority-class
 name: priority-class-policy
 sources:
-- ghcr.io/kubewarden/policies/priority-class-policy:v1.0.3
-version: 1.0.3
+- ghcr.io/kubewarden/policies/priority-class-policy:v1.1.5
+version: 1.1.5

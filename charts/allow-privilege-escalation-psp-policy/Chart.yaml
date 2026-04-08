@@ -1,5 +1,5 @@
 annotations:
-  artifacthub.io/repository: allow-privilege-escalation-psp
+  artifacthub.io/repository: kubewarden-policy-library
   catalog.cattle.io/hidden: "true"
   catalog.cattle.io/type: kubewarden-policy
   catalog.cattle.io/ui-component: kubewarden
@@ -17,6 +17,7 @@ annotations:
       - pods
       operations:
       - CREATE
+      - UPDATE
     - apiGroups:
       - ''
       apiVersions:
@@ -48,15 +49,15 @@ annotations:
       operations:
       - CREATE
       - UPDATE
-  kubewarden/tag: v1.0.0
-appVersion: 1.0.0
+  kubewarden/tag: v1.0.10
+appVersion: 1.0.10
 description: Replacement for the Kubernetes Pod Security Policy that controls the
   allowance of privilege escalation in containers and init containers of a pod
-home: https://github.com/kubewarden/allow-privilege-escalation-psp-policy
+home: https://github.com/kubewarden/policies
 keywords:
 - PSP
 - privilege escalation
 name: allow-privilege-escalation-psp
 sources:
-- ghcr.io/kubewarden/policies/allow-privilege-escalation-psp:v1.0.0
-version: 1.0.0
+- ghcr.io/kubewarden/policies/allow-privilege-escalation-psp:v1.0.10
+version: 1.0.10

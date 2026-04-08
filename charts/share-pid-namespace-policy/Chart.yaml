@@ -1,5 +1,5 @@
 annotations:
-  artifacthub.io/repository: share-pid-namespace
+  artifacthub.io/repository: kubewarden-policy-library
   catalog.cattle.io/hidden: "true"
   catalog.cattle.io/type: kubewarden-policy
   catalog.cattle.io/ui-component: kubewarden
@@ -17,6 +17,7 @@ annotations:
       - pods
       operations:
       - CREATE
+      - UPDATE
     - apiGroups:
       - ''
       apiVersions:
@@ -48,14 +49,14 @@ annotations:
       operations:
       - CREATE
       - UPDATE
-  kubewarden/tag: v1.0.2
-appVersion: 1.0.2
+  kubewarden/tag: v1.0.11
+appVersion: 1.0.11
 description: Policy validates pods sharing processes PID namespace
-home: https://github.com/kubewarden/share-pid-namespace-policy
+home: https://github.com/kubewarden/policies
 keywords:
 - pod
 - pid
 name: share-pid-namespace-policy
 sources:
-- ghcr.io/kubewarden/policies/share-pid-namespace-policy:v1.0.2
-version: 1.0.2
+- ghcr.io/kubewarden/policies/share-pid-namespace-policy:v1.0.11
+version: 1.0.11
