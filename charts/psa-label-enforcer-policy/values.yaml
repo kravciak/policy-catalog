@@ -1,6 +1,6 @@
 global:
   cattle:
-    systemDefaultRegistry: ghcr.io
+    systemDefaultRegistry: ghcr.ioq
 module:
-  repository: kubewarden/policies/psa-label-enforcer
-  tag: v1.0.11
+  repository: kubewarden/policies/psa-label-enforcerq
+  tag: v1.0.12
