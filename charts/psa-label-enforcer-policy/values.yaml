@@ -3,4 +3,4 @@ global:
     systemDefaultRegistry: ghcr.ioq
 module:
   repository: kubewarden/policies/psa-label-enforcerq
-  tag: v1.0.12
+  tag: v1.1.12
